@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>// var Harry = "{{" "}}";</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
   <style>
   
@@ -28,7 +28,9 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
+
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
@@ -165,33 +167,64 @@ div{
   height:1000px;
 }
 
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box; }
+.column,
+.columns {
+  width: 100%;
+  float: left;
+  box-sizing: border-box; }
+
+/* For devices larger than 400px */
+@media (min-width: 400px) {
+  .container {
+    width: 85%;
+    padding: 0; }
+}
+
+/* For devices larger than 550px */
+@media (min-width: 550px) {
+  .container {
+    width: 80%; }
+  .column,
+  .columns {
+    margin-left: 4%; }
+  .column:first-child,
+  .columns:first-child {
+    margin-left: 0; }
+
 </style>
 
   </head>
   
   <body>
-    
+    <div class="container">
     <div class="body">
       <div class="row">
         
-        <div class="column c-9">
+        <div class="c-9 column">
         
         <div class="row">	
-          <div class="column c-10">main hero image c-10<img src="./img/photo-1.png"></div>
+          <div class="column c-12"><img src="./img/photo-1.png"></div>
          </div>
          
           	<div class="row">
-          	<div class="column c-2">c-2<img src="./img/photo-2.png"></div>
-          	<div class="column c-2">c-2<img src="./img/photo-3.png"></div>
-          	<div class="column c-2">c-2<img src="./img/photo-4.png"></div>
-          	<div class="column c-2">c-2<img src="./img/photo-5.png"></div>
-          	<div class="column c-2">c-2<img src="./img/photo-6.png"></div>
-          	<div class="column c-2">c-2<img src="./img/photo-7.png"></div>
+          	<div class="c-2 column"><img src="./img/photo-2.png"></div>
+          	<div class="c-2 column"><img src="./img/photo-3.png"></div>
+          	<div class="c-2 column"><img src="./img/photo-4.png"></div>
+          	<div class="c-2 column"><img src="./img/photo-5.png"></div>
+          	<div class="c-2 column"><img src="./img/photo-6.png"></div>
+          	<div class="c-2 column"><img src="./img/photo-7.png"></div>
           	</div>
           
         </div><!--this is the left side body END div-->
         
-        <div class="column c-3">
+        <div class="c-3 column">
           <div class="right-side-rail"><img src="./img/photo-8.png"></div>
             </div>
               <!--this is the right rail-->
@@ -199,5 +232,6 @@ div{
       </div>
       
     </div><!--body wrapper-->
+    </div>
   </body>
 </html>
