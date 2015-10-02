@@ -1,2 +1,6 @@
 /** varHarry css **/
 
+.photo-three{
+	background: url('../img/photo-1.png') no-repeat;
+	height:200px;
+}
