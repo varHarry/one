@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>jQuery UI Sortable Grid</title>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+  <style>
+  #sortable { list-style-type: none; margin: 0; padding: 0; width: 450px; }
+  #sortable li { margin: 3px 3px 3px 0; padding: 1px; float: left; width: 100px; height: 90px; font-size: 4em; text-align: center; }
+  </style>
+  <script>
+  $(function() {
+    $( "#sortable" ).sortable();
+    $( "#sortable" ).disableSelection();
+  });
+  </script>
+</head>
+<body>
+
+<p>hint: Drag and Drop these photos :)</p>
+
+<ul id="sortable">
+  <li class="ui-state-default"><img src="http://placehold.it/100x90?text=One"/></li>
+  <li class="ui-state-default"><img src="http://placehold.it/100x90?text=Two"/></li>
+  <li class="ui-state-default"><img src="http://placehold.it/100x90?text=Three"/></li>
+  <li class="ui-state-default"><img src="http://placehold.it/100x90?text=Four"/></li>
+  <li class="ui-state-default"><img src="http://placehold.it/100x90?text=Five"/></li>
+  <li class="ui-state-default"><img src="http://placehold.it/100x90?text=Six"/></li>
+  <li class="ui-state-default"><img src="http://placehold.it/100x90?text=Seven"/></li>
+  <li class="ui-state-default"><img src="http://placehold.it/100x90?text=Eight"/></li>
+  <li class="ui-state-default"><img src="http://placehold.it/100x90?text=Nine"/></li>
+  <li class="ui-state-default"><img src="http://placehold.it/100x90?text=Ten"/></li>
+  <li class="ui-state-default"><img src="http://placehold.it/100x90?text=Eleven"/></li>
+  <li class="ui-state-default"><img src="http://placehold.it/100x90?text=Twelve"/></li>
+</ul>
+
+
+</body>
+</html>
