@@ -6,10 +6,10 @@
     var broadcastTopVideos = "../data.json";
     $.getJSON(broadcastTopVideos, function(json) {
         console.log(json);
-        
-        var broadcastVideosImage = json[0,1].smallImagePath;
-        var broadcastVideosUrl = json[0,1].Url;
-        var broadcastVideosHeadline = json[0,1].Headline;
+
+        var broadcastVideosImage = json[0].smallImagePath;
+        var broadcastVideosUrl = json[0].Url;
+        var broadcastVideosHeadline = json[0].Headline;
 
         window.onload = function() {
             document.getElementById("broadcast-top-videos-image").setAttribute("src", broadcastVideosImage);
