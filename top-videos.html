@@ -6,15 +6,15 @@
     var broadcastTopVideos = "https://api.tegna-tv.com/video/mostviewed/video/281/9?subscription-key=95d4abf0b5bc4c3f935e355273f7fb58";
     $.getJSON(broadcastTopVideos, function(json) {
 
-        var broadcastVideosImage0 = json[].smallImagePath;
-        var broadcastVideosUrl0 = json[].Url;
-        var broadcastVideosHeadline0 = json[].Headline;
+        var broadcastVideosImage = json[0,1].smallImagePath;
+        var broadcastVideosUrl = json[0,1].Url;
+        var broadcastVideosHeadline = json[0,1].Headline;
 
         window.onload = function() {
-            document.getElementById("broadcast-top-videos-image").setAttribute("src", broadcastVideosImage0);
-            document.getElementById("broadcast-top-videos-image").setAttribute("alt", broadcastVideosHeadline0);
-            document.getElementById("broadcast-a-tag").setAttribute("href", broadcastVideosUrl0);
-            document.getElementById('broadcastTopVideosHeadline').innerHTML = broadcastVideosHeadline0;
+            document.getElementById("broadcast-top-videos-image").setAttribute("src", broadcastVideosImage);
+            document.getElementById("broadcast-top-videos-image").setAttribute("alt", broadcastVideosHeadline);
+            document.getElementById("broadcast-a-tag").setAttribute("href", broadcastVideosUrl);
+            document.getElementById('broadcastTopVideosHeadline').innerHTML = broadcastVideosHeadline;
         };
     });
 }
@@ -29,9 +29,9 @@ topVideos();
     </a>
 
     <div class="broadcastTopVideos-smallVideosWrapper" style="margin-top:20px; width:299px;">
-        <a id="broadcast-a-tag-1" href="" style="text-decoration:none;">
-            <img id="broadcast-top-videos-image-1" src="" style="display:inline-block; vertical-align: middle; padding-left:2px;" alt="" height="84" width="149" />
-            <div id="broadcastTopVideosHeadline-1" style="padding-top: 5px; display:inline-block; vertical-align: middle; height:84px; width:140px; text-align:left; padding-left:8px; color:#000000; font-family:'Futura Today'; font-weight: 400;"></div>
+        <a id="broadcast-a-tag" href="" style="text-decoration:none;">
+            <img id="broadcast-top-videos-image" src="" style="display:inline-block; vertical-align: middle; padding-left:2px;" alt="" height="84" width="149" />
+            <div id="broadcastTopVideosHeadline" style="padding-top: 5px; display:inline-block; vertical-align: middle; height:84px; width:140px; text-align:left; padding-left:8px; color:#000000; font-family:'Futura Today'; font-weight: 400;"></div>
         </a>
     </div>
 
