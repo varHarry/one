@@ -10,9 +10,13 @@
 jQuery(document).ready(function($) {
     $.getJSON("http://www.varharry.com/data.json", function(data){
 
-      $.each(data, function(i, item) {
+      $.each($(data).slice(0,6), function(i, item) {
         var broadcastmoduleHeadline = data[i].Headline;
         console.log(broadcastmoduleHeadline);
+        var broadcastmoduleUrl = data[i].Url;
+        console.log(broadcastmoduleUrl);
+        var broadcastmoduleImage = data[i].smallImagePath;
+        console.log(broadcastmoduleImage);
       });
     });
   });
