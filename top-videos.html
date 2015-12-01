@@ -6,15 +6,23 @@
     var broadcastTopVideos = "http://www.varharry.com/data.json";
     $.getJSON(broadcastTopVideos, function(json) {
         console.log(json);
+        console.log(json.smallImagePath);
 
-        var broadcastVideosImage = json[0].smallImagePath;
+        /*var broadcastVideosImage = json[0].smallImagePath;
         console.log('IMAGE :',broadcastVideosImage);
         var broadcastVideosUrl = json[0].Url;
         console.log('URL :',broadcastVideosUrl);
         var broadcastVideosHeadline = json[0].Headline;
-        console.log('HEADLINE :',broadcastVideosHeadline);
+        console.log('HEADLINE :',broadcastVideosHeadline); */
 
-        $("#broadcastVideosHeadline").append('broadcastVideosHeadline');
+        for(var i = 0; i < json.smallImagePath; i++) {
+          document.write("<h2"+smallImagePath[i][0]+"</h2>");
+          for(var j = 0; j < smallImagePath[i].length; j++) {
+            document.write(smallImagePath[i][j]+"<br>");
+          }
+        }
+
+      //  $("#broadcastVideosHeadline").append('broadcastVideosHeadline');
         //document.write(broadcastVideosUrl);
 
       /*  window.onload = function() {
