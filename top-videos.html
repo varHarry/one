@@ -10,7 +10,9 @@
         var broadcastVideosImage = json[0].smallImagePath;
         console.log('IMAGE :',broadcastVideosImage);
         var broadcastVideosUrl = json[0].Url;
+        console.log('URL :',broadcastVideosUrl);
         var broadcastVideosHeadline = json[0].Headline;
+        console.log('HEADLINE :',broadcastVideosHeadline);
 
         window.onload = function() {
             document.getElementById("broadcast-top-videos-image").setAttribute("src", broadcastVideosImage);
