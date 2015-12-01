@@ -27,6 +27,7 @@
 };
 
 getJSON('http://www.varharry.com/data.json').then(function(data) {
+  console.log(data);
     //alert('Your Json result is:  ' + data.result); //you can comment this, i used it to debug
 
     result.innerText = data.result; //display the result in an HTML element
