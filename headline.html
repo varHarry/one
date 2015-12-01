@@ -27,19 +27,17 @@ jQuery(document).ready(function($) {
     $.getJSON("http://www.varharry.com/data.json", function(data){
 for (var i = 0, len = data.length; i < len; ++i) {
 var bcast = data[i];
-console.log(bcast);
+//console.log(bcast);
 console.log("URL :",bcast.Url);
-$("<div id=\"" + bcast.Url + "\">" + bcast.Headline + " (" + bcast.smallImagePath + " - " + bcast.Url + ")</div>");
+$(".headline").append("<p>" + bcast.Headline + "</p>");
 }
 });
 });
 
 </script>
 
-
-
+<div class="headline"></div>
 <div class="headline"></div>
 
-
 </body>
-</html?
+</html>
