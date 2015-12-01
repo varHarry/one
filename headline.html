@@ -11,11 +11,12 @@
   $(document).ready( function() {
     $.getJSON("http://www.varharry.com/data.json", function(data){
 
-      var bcastHeadline = data.Headline;
-      console.log(bcastHeadline);
+      $.each(data.Headline, function (){
 
-      $(".headline").append(bcastHeadline);
-      console.log(data);
+        $(".headline").append(+this['Headline']+);
+        console.log(data);
+
+      });
     });
   });
 
