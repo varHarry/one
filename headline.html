@@ -9,7 +9,7 @@
 <script>
 
   $(document).ready( function() {
-    $.getJSON("http://www.varharry.com/data.json&callback=?", function(data){
+    $.getJSON("http://www.varharry.com/data.json", function(data){
 
       $(".headline").append("<p>" +this['Headline']+ "</p>");
     });
