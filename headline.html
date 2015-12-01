@@ -7,7 +7,7 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script>
-/*jQuery(document).ready(function($) {
+jQuery(document).ready(function($) {
     $.getJSON("http://www.varharry.com/data.json", function(data){
 
     $.each($(data).slice(0,6), function(i, item) {
@@ -17,12 +17,13 @@
         console.log(broadcastmoduleImage);
         var broadcastmoduleHeadline = data[i].Headline;
         console.log(broadcastmoduleHeadline);
-      $(".headline").append("<p>" +broadcastmoduleHeadline.toString()+ "</p>");
+      $(".broadcast-top-videos-container").append("<p>" +broadcastmoduleHeadline.toString()+ "</p>");
       });
     });
-  });*/
+  });
 </script>
 <script>
+/*
 jQuery(document).ready(function($) {
     $.getJSON("http://www.varharry.com/data.json", function(data){
 for (var i = 0, len = data.length; i < len; ++i) {
@@ -36,8 +37,7 @@ $(".headline").append("<p>" + bcast.Headline + "</p>");
 
 </script>
 
-<div class="headline"></div>
-<div class="headline"></div>
+<div class="broadcast-top-videos-container"></div>
 
 </body>
 </html>
