@@ -14,12 +14,14 @@
         var broadcastVideosHeadline = json[0].Headline;
         console.log('HEADLINE :',broadcastVideosHeadline);
 
-        window.onload = function() {
+        $("broadcastVideosHeadline").html(broadcastVideosHeadline);
+
+      /*  window.onload = function() {
             document.getElementById("broadcast-top-videos-image").setAttribute("src", broadcastVideosImage);
             document.getElementById("broadcast-top-videos-image").setAttribute("alt", broadcastVideosHeadline);
             document.getElementById("broadcast-a-tag").setAttribute("href", broadcastVideosUrl);
             document.getElementById('broadcastTopVideosHeadline').innerHTML = broadcastVideosHeadline;
-        };
+        }; */
     });
 }
 topVideos();
