@@ -7,7 +7,7 @@
     $.getJSON(broadcastTopVideos, function(json) {
         console.log(json);
 
-        var broadcastVideosImage = json.smallImagePath;
+        var broadcastVideosImage = json.[0]smallImagePath;
         console.log('IMAGE :',smallImagePath);
         var broadcastVideosUrl = json[0].Url;
         var broadcastVideosHeadline = json[0].Headline;
