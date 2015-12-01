@@ -11,7 +11,10 @@
   $(document).ready( function() {
     $.getJSON("http://www.varharry.com/data.json", function(data){
 
-      $(".headline").append("<p>" +this['Headline']+ "</p>");
+      $ var bcastHeadline = data[0].Headline;
+      console.log(bcastHeadline);
+
+      $(".headline").append(Headline);
       console.log(data);
     });
   });
