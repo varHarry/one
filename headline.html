@@ -17,7 +17,7 @@ jQuery(document).ready(function($) {
         console.log(broadcastmoduleImage);
         var broadcastmoduleHeadline = data[i].Headline;
         console.log(broadcastmoduleHeadline);
-      $(".broadcast-top-videos-container").append("<p>" +broadcastmoduleHeadline.toString()+ "</p>");
+      $(".broadcast-top-videos-container").append("<a href=" +broadcastmoduleUrl+ "><img src=" +broadcastmoduleImage+ " alt=" +broadcastmoduleHeadline+ " width="100%" height="100%"/><p>" +broadcastmoduleHeadline+ "</p></a>");
       });
     });
   });
