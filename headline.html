@@ -14,7 +14,8 @@ jQuery(document).ready(function($) {
         var broadcastmoduleUrl = data[i].Url;
         var broadcastmoduleImage = data[i].smallImagePath;
         var broadcastmoduleHeadline = data[i].Headline;
-      $(".broadcast-top-videos-container").append("<img src=" +broadcastmoduleImage+ " alt=" +broadcastmoduleHeadline+ "/><p>" +broadcastmoduleHeadline+ "</p>").wrap("<a href=" +broadcastmoduleUrl+ ">"));
+      $(".broadcast-top-videos-container").wrap("<a href=" +broadcastmoduleUrl+ ">");
+      $(".broadcast-top-videos-container").append("<img src=" +broadcastmoduleImage+ " alt=" +broadcastmoduleHeadline+ "/><p>" +broadcastmoduleHeadline+ "</p>");
       });
     });
   });
