@@ -12,12 +12,9 @@ jQuery(document).ready(function($) {
 
     $.each($(data).slice(0,6), function(i, item) {
         var broadcastmoduleUrl = data[i].Url;
-        console.log(broadcastmoduleUrl);
         var broadcastmoduleImage = data[i].smallImagePath;
-        console.log(broadcastmoduleImage);
         var broadcastmoduleHeadline = data[i].Headline;
-        console.log(broadcastmoduleHeadline);
-      $(".broadcast-top-videos-container").wrap("<a href=" +broadcastmoduleUrl+ ">").append("<img src=" +broadcastmoduleImage+ " alt=" +broadcastmoduleHeadline+ "/><p>" +broadcastmoduleHeadline+ "</p></a>");
+      $(".broadcast-top-videos-container").append("<img src=" +broadcastmoduleImage+ " alt=" +broadcastmoduleHeadline+ "/><p>" +broadcastmoduleHeadline+ "</p>").wrap("<a href=" +broadcastmoduleUrl+ ">"));
       });
     });
   });
