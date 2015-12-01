@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+  <title>works</title>
+</head>
+
+<body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script>
+
+  $(document).ready( function() {
+    $.getJSON("http://www.varharry.com/data.json&callback=?", function(data){
+
+      $(".headline").append("<p>" "+this['Headline']+");
+
+    });
+  });
+
+</script>
+
+<div class="headline"></div>
+
+
+</body>
+</html?
