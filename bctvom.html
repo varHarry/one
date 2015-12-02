@@ -27,14 +27,14 @@ jQuery(document).ready(function($) {
       console.log("4 :",bctvom[4].Url);
       console.log("5 :",bctvom[5].Url);
 
-      $(".bctvom-hm-ror-0").wrap( "<a href=" +bctvom[0].Url+ " />");
+      $(".bctvom-hm-ror-0").append( "<a href=" +bctvom[0].Url+ " />");
       $(".bctvom-tws").append("<img src=" +bctvom[0].smallImagePath+ " alt=" +bctvom[0].Headline+ "/>");
-      $('.bctvom-tws img').attr('height',168);
-      $('.bctvom-tws img').attr('width',299);
+      $(".bctvom-tws img").attr('height',168);
+      $(".bctvom-tws img").attr('width',299);
       $(".bctvom-hdl").append("<span>" +bctvom[0].Headline+ "</span>");
 
 
-      $(".bctvom-hm-ror-1").wrap( "<a href=" +bctvom[1].Url+ " />");
+      $(".bctvom-hm-ror-1").append( "<a href=" +bctvom[1].Url+ " />");
 
       $(".bctvom-smi-1").append("<img src=" +bctvom[1].smallImagePath+ " alt=" +bctvom[1].Headline+ "/>");
       $('.bctvom-smi-1 img').attr('height',84);
@@ -52,12 +52,12 @@ jQuery(document).ready(function($) {
         <div class="bctvom-hm-ror-0">
           <div class="bctvom-tws"></div>
           <div class="bctvom-hdl"></div>
-        </div>
+        </div></a>
 
         <div class="bctvom-hm-ror-1">
             <div class="bctvom-smi-1"></div>
             <div class="bctvom-shd-1"></div>
-        </div>
+        </div></a>
 
         <div class="bctvom-hm-ror-2">
             <div class="bctvom-smi-2"></div>
