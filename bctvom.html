@@ -13,8 +13,8 @@
 <script>
 jQuery(document).ready(function($) {
     $.getJSON("http://www.varharry.com/data.json", function(bctvom){
-
-    $.each($(bctvom).slice(0,6), function(i, item) {
+    //  $.getJSON(bctvom, function(bctvom) {
+    $.each(bctvom, function(i, item) {
 
       console.log("0 :",bctvom[0].Url);
       console.log("1 :",bctvom[1].Url);
