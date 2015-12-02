@@ -11,7 +11,7 @@ a{text-decoration:none;}
 .bctvom-tws{width:299px;height:168px;border:1px solid #000;}
 .bctvom-hdl{width:299px;height:40px;border:1px solid #000;text-align:center;padding-top:5px;font-family:Futura Bold;}
 .bctvom-hm-ror-0{width:299px;height:210px;color:#000000;}
-.bctvom-hm-ror-1,.bctvom-hm-ror-2,.bctvom-hm-ror-3,.bctvom-hm-ror-4,.bctvom-hm-ror-5{width:299px;height:90px;border:1px solid #000;}
+.bctvom-hm-ror-1,.bctvom-hm-ror-2,.bctvom-hm-ror-3,.bctvom-hm-ror-4,.bctvom-hm-ror-5{width:299px;height:90px;color:#000000;border:1px solid #000;}
 .bctvom-smi-1,.bctvom-smi-2,.bctvom-smi-3,.bctvom-smi-4,.bctvom-smi-5{width:140px;height:84px;display:inline-block;vertical-align:middle;border:1px solid #000;}
 .bctvom-shd-1,.bctvom-shd-2,.bctvom-shd-3,.bctvom-shd-4,.bctvom-shd-5{width:125px;height:84px;display:inline-block;vertical-align:middle;padding-left:5px;padding-top:5px;text-align:left;font-family:Futura-Bold;border:1px solid #000;}
 </style>
@@ -29,7 +29,6 @@ jQuery(document).ready(function($) {
       console.log("5 :",bctvom[5].Url);
 
       $(".bctvom-hm-ror-0").wrap( "<a href=" +bctvom[0].Url+ "></a>");
-      $(".bctvom-hm-ror-0 a").css({"text-decoration":"none","color":"#000000"});
       $(".bctvom-tws").append("<img src=" +bctvom[0].smallImagePath+ " alt=" +bctvom[0].Headline+ "/>");
       $(".bctvom-tws img").attr('height',168);
       $(".bctvom-tws img").attr('width',299);
