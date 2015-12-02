@@ -11,10 +11,15 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script>
+
+//function topVideos() {
+//var broadcastTopVideos = "https://api.tegna-tv.com/video/mostviewed/video/{{settings.SITE.site_id}}/9?subscription-key=95d4abf0b5bc4c3f935e355273f7fb58";
+//$.getJSON(broadcastTopVideos, function(json) {
+
 jQuery(document).ready(function($) {
     $.getJSON("http://www.varharry.com/data.json", function(bctvom){
     //  $.getJSON(bctvom, function(bctvom) {
-    $.each(bctvom, function(item) {
+    //$.each(bctvom, function(item) {
 
       console.log("0 :",bctvom[0].Url);
       console.log("1 :",bctvom[1].Url);
