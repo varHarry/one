@@ -1,0 +1,143 @@
+<!DOCTYPE HTML>
+<head>
+<title>bctvom</title>
+</head>
+
+<body>
+
+<style>
+a{text-decoration: none;}
+#bctvom-ror{width:299px;height:100%;padding:2px;display:inline-block;}
+.bctvom-tws{width:299px;height:168px;}
+.bctvom-hdl{width:299px;height:40px;text-align:center;padding-top:10px;font-family:Futura Bold;overflow:hidden;}
+.bctvom-hm-ror-0{width:299px;height:210px;color:#000000;}
+.bctvom-hm-ror-1,.bctvom-hm-ror-2,.bctvom-hm-ror-3,.bctvom-hm-ror-4,.bctvom-hm-ror-5{width:299px;height:90px;color:#000000;margin-top:10px;}
+.bctvom-smi-1,.bctvom-smi-2,.bctvom-smi-3,.bctvom-smi-4,.bctvom-smi-5{width:140px;height:84px;display:inline-block;vertical-align:middle;}
+.bctvom-shd-1,.bctvom-shd-2,.bctvom-shd-3,.bctvom-shd-4,.bctvom-shd-5{width:135px;height:70px;display:inline-block;vertical-align:middle;padding-left:5px;padding-top:5px;text-align:left;font-family:Futura-Bold;overflow:hidden;}
+.bmplspb-0{display:inline-block;vertical-align:middle;float:left;margin-top:-60px;margin-left:20px;}
+.mppbb-0{width:37px;height:37px;margin:0 auto;border-radius:50%;border:2px solid #FFF;position:absolute}
+.mppbt-0{width:0;height:0;margin-left:11px;margin-top:9px;border-top:10px solid transparent;border-bottom:10px solid transparent;border-left:18px solid #FFF;position:absolute}
+.bmplspb{display:inline-block;vertical-align:middle;float:left;margin-top:30px}
+.mppbb{width:37px;height:37px;margin:0 auto;border-radius:50%;border:2px solid #FFF;position:absolute}
+.mppbt{width:0;height:0;margin-left:11px;margin-top:9px;border-top:10px solid transparent;border-bottom:10px solid transparent;border-left:18px solid #FFF;position:absolute}
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script>
+jQuery(document).ready(function($) {
+    $.getJSON("http://www.varharry.com/data.json", function(bctvom){
+
+      $(".bctvom-hm-ror-0").wrap( "<a href=" +bctvom[0].Url+ "></a>");
+      $(".bctvom-tws").append("<img src=" +bctvom[0].smallImagePath+ " alt=" +bctvom[0].Headline+ "/>");
+      $(".bctvom-tws img").attr('height',168);
+      $(".bctvom-tws img").attr('width',299);
+      $(".bctvom-hdl").append("<span>" +bctvom[0].Headline+ "</span>");
+
+      $(".bctvom-hm-ror-1").wrap( "<a href=" +bctvom[1].Url+ "></a>");
+      $(".bctvom-smi-1").append("<img src=" +bctvom[1].smallImagePath+ " alt=" +bctvom[1].Headline+ "/>");
+      $('.bctvom-smi-1 img').attr('height',84);
+      $('.bctvom-smi-1 img').attr('width',140);
+      $(".bctvom-shd-1").append("<span>" +bctvom[1].Headline+ "</span>");
+
+      $(".bctvom-hm-ror-2").wrap( "<a href=" +bctvom[2].Url+ "></a>");
+      $(".bctvom-smi-2").append("<img src=" +bctvom[2].smallImagePath+ " alt=" +bctvom[1].Headline+ "/>");
+      $('.bctvom-smi-2 img').attr('height',84);
+      $('.bctvom-smi-2 img').attr('width',140);
+      $(".bctvom-shd-2").append("<span>" +bctvom[2].Headline+ "</span>");
+
+      $(".bctvom-hm-ror-3").wrap( "<a href=" +bctvom[3].Url+ "></a>");
+      $(".bctvom-smi-3").append("<img src=" +bctvom[3].smallImagePath+ " alt=" +bctvom[1].Headline+ "/>");
+      $('.bctvom-smi-3 img').attr('height',84);
+      $('.bctvom-smi-3 img').attr('width',140);
+      $(".bctvom-shd-3").append("<span>" +bctvom[3].Headline+ "</span>");
+
+      $(".bctvom-hm-ror-4").wrap( "<a href=" +bctvom[4].Url+ "></a>");
+      $(".bctvom-smi-4").append("<img src=" +bctvom[4].smallImagePath+ " alt=" +bctvom[1].Headline+ "/>");
+      $('.bctvom-smi-4 img').attr('height',84);
+      $('.bctvom-smi-4 img').attr('width',140);
+      $(".bctvom-shd-4").append("<span>" +bctvom[4].Headline+ "</span>");
+
+      $(".bctvom-hm-ror-5").wrap( "<a href=" +bctvom[5].Url+ "></a>");
+      $(".bctvom-smi-5").append("<img src=" +bctvom[5].smallImagePath+ " alt=" +bctvom[1].Headline+ "/>");
+      $('.bctvom-smi-5 img').attr('height',84);
+      $('.bctvom-smi-5 img').attr('width',140);
+      $(".bctvom-shd-5").append("<span>" +bctvom[5].Headline+ "</span>");
+
+    });
+  });
+
+</script>
+
+<!--<div class="bmplspb"><div class="mppbb"><div class="mppbt"></div></div></div>-->
+<div id="bctvom-ror" class="bctvom-ror">
+
+    <div class="bctvom-hm-ror-0">
+        <div class="bctvom-tws"></div>
+        <div class="bmplspb-0">
+            <div class="mppbb-0">
+                <div class="mppbt-0"></div>
+            </div>
+        </div>
+        <div class="bctvom-hdl"></div>
+    </div>
+
+    <div class="bmplspb">
+        <div class="mppbb">
+            <div class="mppbt"></div>
+        </div>
+    </div>
+
+    <div class="bctvom-hm-ror-1">
+        <div class="bctvom-smi-1"></div>
+        <div class="bctvom-shd-1"></div>
+    </div>
+
+    <div class="bmplspb">
+        <div class="mppbb">
+            <div class="mppbt"></div>
+        </div>
+    </div>
+
+    <div class="bctvom-hm-ror-2">
+        <div class="bctvom-smi-2"></div>
+        <div class="bctvom-shd-2"></div>
+    </div>
+
+    <div class="bmplspb">
+        <div class="mppbb">
+            <div class="mppbt"></div>
+        </div>
+    </div>
+
+    <div class="bctvom-hm-ror-3">
+        <div class="bctvom-smi-3"></div>
+        <div class="bctvom-shd-3"></div>
+    </div>
+
+    <div class="bmplspb">
+        <div class="mppbb">
+            <div class="mppbt"></div>
+        </div>
+    </div>
+
+    <div class="bctvom-hm-ror-4">
+        <div class="bctvom-smi-4"></div>
+        <div class="bctvom-shd-4"></div>
+    </div>
+
+    <div class="bmplspb">
+        <div class="mppbb">
+            <div class="mppbt"></div>
+        </div>
+    </div>
+
+    <div class="bctvom-hm-ror-5">
+        <div class="bctvom-smi-5"></div>
+        <div class="bctvom-shd-5"></div>
+    </div>
+
+</div>
+
+
+</body>
+</html>

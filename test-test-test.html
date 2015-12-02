@@ -1,0 +1,33 @@
+
+
+<div class="most-popular-stories-container">
+
+    {% for item in module.broadcast_most_popular  %}
+    {% if item.DataType != null %}
+    {% ifchanged item.CMSID %}
+
+<a href="{{ item.Url }}">
+    <div class="broadcast-news-story-grid-container">
+        <div class="broadcast-news-story-grid-container-image">
+            {% if item.smallImagePath != null %}
+            <img src="{{ item.smallImagePath }}" height="85" width="85" alt="article preview image" title="{{ item.Headline }}" style="vertical-align:middle"/>
+        </div>
+        <div class="broadcast-news-story-grid-container-title">
+            <h4>{{ item.Headline }}</h4>
+        </div>
+        {% elif item.smallImagePath == null %}
+        <div class="broadcast-news-story-grid-container-image">
+            <img src="http://placehold.it/85x85?text=image+not+available" height="85" width="85" alt="article preview image" title="{{ item.Headline }}" style="vertical-align:middle"/>
+        {% endif %}
+        </div>
+        {% for item in module.most_popular_articles_data  %}
+        <div class="broadcast-news-story-grid-container-description">
+            <p>{{item.ShortDescription}}</p>
+        </div>
+        {% endfor %}
+    </div>
+</a>
+
+    {% endifchanged %}
+    {% endif %}
+    {% endfor %}

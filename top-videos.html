@@ -3,19 +3,34 @@
 <script type="text/javascript" src="http://interactive.tegna-media.com/jquery/jquery-1.11.3.min.js"></script>
 <script>
     function topVideos() {
-    var broadcastTopVideos = "https://api.tegna-tv.com/video/mostviewed/video/281/9?subscription-key=95d4abf0b5bc4c3f935e355273f7fb58";
+    var broadcastTopVideos = "http://www.varharry.com/data.json";
     $.getJSON(broadcastTopVideos, function(json) {
+        console.log(json);
+        console.log(json.smallImagePath);
 
-        var broadcastVideosImage = json[0,1].smallImagePath;
-        var broadcastVideosUrl = json[0,1].Url;
-        var broadcastVideosHeadline = json[0,1].Headline;
+        /*var broadcastVideosImage = json[0].smallImagePath;
+        console.log('IMAGE :',broadcastVideosImage);
+        var broadcastVideosUrl = json[0].Url;
+        console.log('URL :',broadcastVideosUrl);
+        var broadcastVideosHeadline = json[0].Headline;
+        console.log('HEADLINE :',broadcastVideosHeadline); */
 
-        window.onload = function() {
+        for(var i = 0; i < json.smallImagePath; i++) {
+          document.write("<h2"+smallImagePath[i][0]+"</h2>");
+          for(var j = 0; j < smallImagePath[i].length; j++) {
+            document.write(smallImagePath[i][j]+"<br>");
+          }
+        }
+
+      //  $("#broadcastVideosHeadline").append('broadcastVideosHeadline');
+        //document.write(broadcastVideosUrl);
+
+      /*  window.onload = function() {
             document.getElementById("broadcast-top-videos-image").setAttribute("src", broadcastVideosImage);
             document.getElementById("broadcast-top-videos-image").setAttribute("alt", broadcastVideosHeadline);
             document.getElementById("broadcast-a-tag").setAttribute("href", broadcastVideosUrl);
             document.getElementById('broadcastTopVideosHeadline').innerHTML = broadcastVideosHeadline;
-        };
+        }; */
     });
 }
 topVideos();
@@ -25,8 +40,36 @@ topVideos();
 
     <a id="broadcast-a-tag" href="" style="text-decoration:none;">
         <img id="broadcast-top-videos-image" src="" alt="" height="168" width="299" />
-        <div id="broadcastTopVideosHeadline" style="padding-top: 5px; color:#000000; font-family:'Futura Today'; font-weight: 200;"></div>
+        <div id="broadcastTopVideosHeadline" style="padding-top: 5px; color:#000000; font-family:Futura Today; font-weight: 200;"></div>
     </a>
+
+    <div class="broadcastTopVideos-smallVideosWrapper" style="margin-top:20px; width:299px;">
+        <a id="broadcast-a-tag" href="" style="text-decoration:none;">
+            <img id="broadcast-top-videos-image" src="" style="display:inline-block; vertical-align: middle; padding-left:2px;" alt="" height="84" width="149" />
+            <div id="broadcastTopVideosHeadline" style="padding-top: 5px; display:inline-block; vertical-align: middle; height:84px; width:140px; text-align:left; padding-left:8px; color:#000000; font-family:'Futura Today'; font-weight: 400;"></div>
+        </a>
+    </div>
+
+    <div class="broadcastTopVideos-smallVideosWrapper" style="margin-top:20px; width:299px;">
+        <a id="broadcast-a-tag" href="" style="text-decoration:none;">
+            <img id="broadcast-top-videos-image" src="" style="display:inline-block; vertical-align: middle; padding-left:2px;" alt="" height="84" width="149" />
+            <div id="broadcastTopVideosHeadline" style="padding-top: 5px; display:inline-block; vertical-align: middle; height:84px; width:140px; text-align:left; padding-left:8px; color:#000000; font-family:'Futura Today'; font-weight: 400;"></div>
+        </a>
+    </div>
+
+    <div class="broadcastTopVideos-smallVideosWrapper" style="margin-top:20px; width:299px;">
+        <a id="broadcast-a-tag" href="" style="text-decoration:none;">
+            <img id="broadcast-top-videos-image" src="" style="display:inline-block; vertical-align: middle; padding-left:2px;" alt="" height="84" width="149" />
+            <div id="broadcastTopVideosHeadline" style="padding-top: 5px; display:inline-block; vertical-align: middle; height:84px; width:140px; text-align:left; padding-left:8px; color:#000000; font-family:'Futura Today'; font-weight: 400;"></div>
+        </a>
+    </div>
+
+    <div class="broadcastTopVideos-smallVideosWrapper" style="margin-top:20px; width:299px;">
+        <a id="broadcast-a-tag" href="" style="text-decoration:none;">
+            <img id="broadcast-top-videos-image" src="" style="display:inline-block; vertical-align: middle; padding-left:2px;" alt="" height="84" width="149" />
+            <div id="broadcastTopVideosHeadline" style="padding-top: 5px; display:inline-block; vertical-align: middle; height:84px; width:140px; text-align:left; padding-left:8px; color:#000000; font-family:'Futura Today'; font-weight: 400;"></div>
+        </a>
+    </div>
 
     <div class="broadcastTopVideos-smallVideosWrapper" style="margin-top:20px; width:299px;">
         <a id="broadcast-a-tag" href="" style="text-decoration:none;">
