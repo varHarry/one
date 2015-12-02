@@ -27,7 +27,8 @@ jQuery(document).ready(function($) {
       console.log("5 :",bctvom[5].Url);
 
       $(".bctvom-tws").append("<img src=" +bctvom[0].smallImagePath+ " alt=" +bctvom[0].Headline+ "/>");
-      $(".bctvom-tws").attr('width', 299).attr('height', 168);
+      $('.bctvom-tws img').attr('height',168);
+      $('.bctvom-tws img').attr('width',299);
       $(".bctvom-hdl").append("<span>" +bctvom[0].Headline+ "</span>");
     });
   });
