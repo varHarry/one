@@ -12,6 +12,8 @@ jQuery(document).ready(function($) {
 
     $.each($(data).slice(0,6), function(i, item) {
         var broadcastmoduleUrl = data[i].Url;
+        console.log("2 :",data[2].Url);
+        console.log("all :",data[i].Url);
         var broadcastmoduleImage = data[i].smallImagePath;
         var broadcastmoduleHeadline = data[i].Headline;
       $(".broadcast-top-videos-container").wrap("<a href=" +broadcastmoduleUrl+ ">");
