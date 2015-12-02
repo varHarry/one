@@ -14,7 +14,7 @@
 jQuery(document).ready(function($) {
     $.getJSON("http://www.varharry.com/data.json", function(bctvom){
     //  $.getJSON(bctvom, function(bctvom) {
-    $.each(bctvom, function(i, item) {
+    $.each(bctvom, function(k,v) {
 
       console.log("0 :",bctvom[0].Url);
       console.log("1 :",bctvom[1].Url);
