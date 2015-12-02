@@ -6,27 +6,19 @@
 <body>
 
 <style>
-a{text-decoration:none;}
 #bctvom-ror{width:299px;height:100%;padding:2px;border:1px solid:#000;display:inline-block;}
 .bctvom-tws{width:299px;height:168px;border:1px solid #000;}
 .bctvom-hdl{width:299px;height:40px;border:1px solid #000;text-align:center;padding-top:5px;font-family:Futura Bold;}
 .bctvom-hm-ror-0{width:299px;height:210px;color:#000000;}
 .bctvom-hm-ror-1,.bctvom-hm-ror-2,.bctvom-hm-ror-3,.bctvom-hm-ror-4,.bctvom-hm-ror-5{width:299px;height:90px;color:#000000;border:1px solid #000;}
 .bctvom-smi-1,.bctvom-smi-2,.bctvom-smi-3,.bctvom-smi-4,.bctvom-smi-5{width:140px;height:84px;display:inline-block;vertical-align:middle;border:1px solid #000;}
-.bctvom-shd-1,.bctvom-shd-2,.bctvom-shd-3,.bctvom-shd-4,.bctvom-shd-5{width:125px;height:84px;display:inline-block;vertical-align:middle;padding-left:5px;padding-top:5px;text-align:left;font-family:Futura-Bold;border:1px solid #000;}
+.bctvom-shd-1,.bctvom-shd-2,.bctvom-shd-3,.bctvom-shd-4,.bctvom-shd-5{width:135px;height:70px;display:inline-block;vertical-align:middle;padding-left:5px;padding-top:5px;text-align:left;font-family:Futura-Bold;border:1px solid #000;}
 </style>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script>
 jQuery(document).ready(function($) {
     $.getJSON("http://www.varharry.com/data.json", function(bctvom){
-
-      console.log("0 :",bctvom[0].Url);  //smallImagePath  & Headline
-      console.log("1 :",bctvom[1].Url);
-      console.log("2 :",bctvom[2].Url);
-      console.log("3 :",bctvom[3].Url);
-      console.log("4 :",bctvom[4].Url);
-      console.log("5 :",bctvom[5].Url);
 
       $(".bctvom-hm-ror-0").wrap( "<a href=" +bctvom[0].Url+ "></a>");
       $(".bctvom-tws").append("<img src=" +bctvom[0].smallImagePath+ " alt=" +bctvom[0].Headline+ "/>");
