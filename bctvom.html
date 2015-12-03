@@ -22,10 +22,10 @@ a{text-decoration: none;}
 .mppbt{width:0;height:0;margin-left:11px;margin-top:9px;border-top:10px solid transparent;border-bottom:10px solid transparent;border-left:18px solid #FFF;position:absolute}
 </style>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript" src="http://interactive.tegna-media.com/jquery/jquery-1.11.3.min.js"></script>
 <script>
 jQuery(document).ready(function($) {
-    $.getJSON("http://www.varharry.com/data.json", function(bctvom){
+    $.getJSON("https://api.tegna-tv.com/video/mostviewed/video/281/9?subscription-key=95d4abf0b5bc4c3f935e355273f7fb58?callback=?", function(bctvom){
 
       $(".bctvom-hm-ror-0").wrap( "<a href=" +bctvom[0].Url+ "></a>");
       $(".bctvom-tws").append("<img src=" +bctvom[0].smallImagePath+ " alt=" +bctvom[0].Headline+ "/>");
