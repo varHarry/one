@@ -25,7 +25,7 @@ a{text-decoration: none;}
 <script type="text/javascript" src="http://interactive.tegna-media.com/jquery/jquery-1.11.3.min.js"></script>
 <script>
 jQuery(document).ready(function($) {
-    $.getJSON("https://api.tegna-tv.com/video/mostviewed/video/281/9?subscription-key=95d4abf0b5bc4c3f935e355273f7fb58?callback=?", function(bctvom){
+    $.getJSON("http://www.varharry.com/data.json", function(bctvom){
 
       $(".bctvom-hm-ror-0").wrap( "<a href=" +bctvom[0].Url+ "></a>");
       $(".bctvom-tws").append("<img src=" +bctvom[0].smallImagePath+ " alt=" +bctvom[0].Headline+ "/>");
