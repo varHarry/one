@@ -25,6 +25,7 @@ a{text-decoration: none;}
 <script type="text/javascript" src="http://interactive.tegna-media.com/jquery/jquery-1.11.3.min.js"></script>
 <script>
 jQuery(document).ready(function($) {
+    $.support.cors = true;
     $.getJSON("http://www.varharry.com/data.json", function(bctvom){
 
       $(".bctvom-hm-ror-0").wrap( "<a href=" +bctvom[0].Url+ "></a>");
@@ -87,6 +88,8 @@ jQuery(document).ready(function($) {
         </div>
     </div>
 
+<hr size="1">
+
     <div class="bctvom-hm-ror-1">
         <div class="bctvom-smi-1"></div>
         <div class="bctvom-shd-1"></div>
@@ -98,10 +101,14 @@ jQuery(document).ready(function($) {
         </div>
     </div>
 
+<hr size="1">
+
     <div class="bctvom-hm-ror-2">
         <div class="bctvom-smi-2"></div>
         <div class="bctvom-shd-2"></div>
     </div>
+
+<hr size="1">
 
     <div class="bmplspb">
         <div class="mppbb">
@@ -114,6 +121,8 @@ jQuery(document).ready(function($) {
         <div class="bctvom-shd-3"></div>
     </div>
 
+<hr size="1">
+
     <div class="bmplspb">
         <div class="mppbb">
             <div class="mppbt"></div>
@@ -124,6 +133,8 @@ jQuery(document).ready(function($) {
         <div class="bctvom-smi-4"></div>
         <div class="bctvom-shd-4"></div>
     </div>
+
+<hr size="1">
 
     <div class="bmplspb">
         <div class="mppbb">
@@ -138,6 +149,7 @@ jQuery(document).ready(function($) {
 
 </div>
 
+<hr size="1">
 
 </body>
 </html>
