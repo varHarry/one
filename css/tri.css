@@ -1,0 +1,99 @@
+/*this is the unminified version of the css for the top videos module Dec 9th 2015*/
+
+.mppbb, .mppbb-0, .mppbt, .mppbt-0 {
+    position: absolute;
+}
+a {
+    text-decoration: none;
+}
+#bctvom-ror {
+    width: 299px;
+    height: 100%;
+    padding: 2px;
+    display: inline-block;
+}
+.bctvom-tws {
+    width: 299px;
+    height: 168px;
+}
+.bctvom-hdl {
+    width: 299px;
+    height: 50px;
+    text-align: center;
+    padding-top: 10px;
+    overflow: hidden;
+}
+.bctvom-hm-ror-0 {
+    width: 299px;
+    height: 210px;
+    color: #000;
+}
+.bctvom-hm-ror-1, .bctvom-hm-ror-2, .bctvom-hm-ror-3, .bctvom-hm-ror-4, .bctvom-hm-ror-5 {
+    width: 299px;
+    height: 90px;
+    color: #000;
+    margin-top: 15px;
+    border-top: 1px dashed #FFF;
+}
+.bctvom-smi-1, .bctvom-smi-2, .bctvom-smi-3, .bctvom-smi-4, .bctvom-smi-5 {
+    width: 140px;
+    height: 84px;
+    display: inline-block;
+    vertical-align: middle;
+    float: left;
+}
+.bctvom-shd-1, .bctvom-shd-2, .bctvom-shd-3, .bctvom-shd-4, .bctvom-shd-5 {
+    width: 135px;
+    height: 70px;
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 5px;
+    padding-top: 5px;
+    text-align: left;
+    overflow: hidden;
+    float: right;
+}
+.bmplspb-0 {
+    display: inline-block;
+    vertical-align: middle;
+    float: left;
+    margin-top: -60px;
+    margin-left: 20px;
+}
+.mppbb-0 {
+    width: 37px;
+    height: 37px;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 2px solid #FFF;
+}
+.mppbt-0 {
+    width: 0;
+    height: 0;
+    margin-left: 11px;
+    margin-top: 9px;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 18px solid #FFF;
+}
+.bmplspb {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 20px;
+}
+.mppbb {
+    width: 37px;
+    height: 37px;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 2px solid #FFF;
+}
+.mppbt {
+    width: 0;
+    height: 0;
+    margin-left: 11px;
+    margin-top: 9px;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 18px solid #FFF;
+}
