@@ -45,6 +45,49 @@
        transform-origin :100% 100%;
      }
 
+     /*next */
+
+     #heart-1 {
+           position: relative;
+           width: 33.33px;
+           height: 30px;
+         }
+
+         #heart-1:before, #heart-1:after {
+           position: absolute;
+           content: "";
+           left: 16.66px;
+           top: 0;
+           width: 16.66px;
+           height: 26.66px;
+           background: red;
+           border-radius: 16.66px 16.66px 0 0;
+           -webkit-transform: rotate(-45deg);
+           -moz-transform: rotate(-45deg);
+           -ms-transform: rotate(-45deg);
+           -o-transform: rotate(-45deg);
+           transform: rotate(-45deg);
+          -webkit-transform-origin: 0 100%;
+          -moz-transform-origin: 0 100%;
+          -ms-transform-origin: 0 100%;
+          -o-transform-origin: 0 100%;
+          transform-origin: 0 100%;
+        }
+
+         #heart-1:after {
+           left: 0;
+           -webkit-transform: rotate(45deg);
+           -moz-transform: rotate(45deg);
+           -ms-transform: rotate(45deg);
+           -o-transform: rotate(45deg);
+          transform: rotate(45deg);
+          -webkit-transform-origin: 100% 100%;
+          -moz-transform-origin: 100% 100%;
+          -ms-transform-origin: 100% 100%;
+          -o-transform-origin: 100% 100%;
+          transform-origin :100% 100%;
+        }
+
      .skin.skin-card{
    padding: 15px;
    border: 1px solid #e9e9e9;
@@ -68,10 +111,10 @@
 
 <body>
 
-  <div class="boxy skin skin-card">I <div id="heart"></div> this.</div>
+  <div class="boxy skin skin-card">I <div id="heart-1" style="display:inline-block;margin-left:auto;margin-right:auto;"></div> this.</div>
 
 
-
+<!--<div id="heart"></div>-->
 
 
 </body>
