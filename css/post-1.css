@@ -1,0 +1,6 @@
+"video":{  "brightcove":{  "standard":{  "player_id":"2195909902001", jwplayer_enabled
+      }
+   }
+}
+
+{% if site_info.siteinfo.propertytype == "broadcast" %}
