@@ -1,36 +1,66 @@
 <!DOCTYPE>
 <html>
+
 <head>
-  <title>scrolling text</title>
+    <title>scrolling text</title>
 
-  <style>
-  #scrollingText div.scrollableArea p
-	{
-		display: block;
-		float: left;
-		margin: 0;
-		padding: 0px 0px 20px 20px;
-		font-family: Times, 'Times New Roman', Georgia, Serif;
-		font-size:75px;
-		font-weight: bold;
-		background-color: #fff;
-		color: #000;
-		white-space: nowrap;
-	}
-  </style>
+    <link rel="stylesheet" type="text/css" href="./css/smooth-scroll.css">
 
+    <style>
+        #scrollingText {
+            width: 728px;
+            height: 70px;
+            position: relative;
+            border: solid 1px #ccc;
+            padding-top: 20px;
+        }
+        #scrollingText div.scrollableArea p {
+            display: block;
+            float: left;
+            margin: 0;
+            padding-right: 20px;
+            font-family: Georgia, Times, 'Times New Roman', Serif;
+            font-size: 45px;
+            line-height: 45px;
+            font-weight: bold;
+            background-color: #fff;
+            color: #000;
+            white-space: nowrap;
+        }
+    </style>
 </head>
+
 <body>
 
-  <script type="text/javascript">
-  $(document).ready(function() {
-    $("#scrollingText").smoothDivScroll({
-      autoScrollingMode: "always",
-      autoScrollDirection: "endlessLoopRight",
-      autoScrollInterval: 10,
-      autoScrollStep: 2
-    });
-  });
-  </script>
+    <div id="scrollingText">
+        <div class="scrollingHotSpotLeft" style="display:none;"></div>
+        <div class="scrollingHotSpotRight" style="display:none;"></div>
+        <div class="scrollWrapper">
+            <div class="scrollableArea" style="width:6638px;">
+
+                <p>smoothDivScroll</p>
+                <p>smoothDivScroll</p>
+                <p>smoothDivScroll</p>
+                <p>smoothDivScroll</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="./js/smooth-scroll-text.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#scrollingText").smoothDivScroll({
+                autoScrollingMode: "always",
+                autoScrollDirection: "endlessLoopRight",
+                autoScrollInterval: 10,
+                autoScrollStep: 2
+            });
+        });
+    </script>
 </body>
+
 </html>
