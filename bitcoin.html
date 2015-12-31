@@ -17,12 +17,12 @@
   </script>
 
   <script>
-  $(document).ready(function ()) {
+  $(document).ready(function() {
     var slushStats = ("https://mining.bitcoin.cz/stats/json/947244-fb33810230dadb19c00f1e13068cd5d6");
-    $.getJSON(slushStats, function (stats) {
-      console.info("Here are the stats: ", stats);
+    $.getJSON(slushStats, function(btcstats) {
+      console.info(btcstats);
     });
-  });
+});
   </script>
 
   <style>
