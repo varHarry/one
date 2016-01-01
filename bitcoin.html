@@ -35,10 +35,11 @@
     console.info('1 bitcoin = $',cost);
     $(".bitcoin-price").append("<span>" + cost + "</span>");
     var slushStats = ("https://mining.bitcoin.cz/stats/json/947244-fb33810230dadb19c00f1e13068cd5d6");
+    var i = 0; i < a.length; i++
     $.getJSON(slushStats, function(btcstats) {
       console.info(btcstats);
       console.info(btcstats.blocks);
-      console.info(btcstats.blocks[key].confirmations);
+      console.info(btcstats.blocks[i].confirmations);
       console.info(btcstats.blocks[390382].reward);
     });
   });
@@ -49,8 +50,11 @@
   if (!Date.now) {
       Date.now = function() { return new Date().getTime();
       };
-  console.info(new Date().getTime());
   }
+  </script>
+
+  <script>
+  console.info(new Date().getTime());
   </script>
 
 <!--
