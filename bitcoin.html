@@ -16,11 +16,8 @@
           $.getJSON(slushStats, function(btcstats) {
               for (var key in btcstats) {
                   if (btcstats.hasOwnProperty(key)) {
-                      console.log(btcstats[key].blocks);
-                      console.log(btcstats[key].confirmations);
                       console.info(btcstats);
                       console.info(btcstats.blocks);
-                      console.info(btcstats.blocks[key]);
                   }
               }
               var monthNames = ["January", "February", "March", "April", "May", "June",
