@@ -56,8 +56,8 @@
       $.getJSON(slushStats, function(btcstats) {
         for (var key in btcstats) {
          if (btcstats.hasOwnProperty(key)) {
-            alert(btcstats[key].blocks);
-            alert(btcstats[key].confirmations);
+            console.alert(btcstats[key].blocks);
+            console.alert(btcstats[key].confirmations);
         console.info(btcstats);
         console.info(btcstats.blocks);
         console.info(btcstats.blocks[Object].confirmations);
