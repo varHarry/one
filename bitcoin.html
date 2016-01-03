@@ -55,6 +55,15 @@ console.info("Timestamp: ",m,d,y);
   </script>
 
   <script>
+  var monthNames = ["January", "February", "March", "April", "May", "June",
+    "July", "August", "September", "October", "November", "December"
+  ];
+
+  var d = new Date();
+  console.info("The current month is " + monthNames[d.getMonth()]);
+  </script>
+
+  <script>
   $(document).ready(function () {
     var bitcoinPrice = ("https://blockchain.info/q/24hrprice");
     $.getJSON(bitcoinPrice, function (cost){
