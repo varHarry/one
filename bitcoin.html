@@ -76,7 +76,11 @@ var h = new Date();
 //var month = h.getMonth();
 var day = h.getDate();
 var year = h.getFullYear();
-console.info("Timestamp: " + monthNames[h.getMonth()] + " " + day + " " + year);
+var hours = h.getHours();
+var minutes = h.getMinutes();
+var seconds = h.getSeconds();
+var milliSeconds = h.getMilliseconds();
+console.info("Timestamp: " + monthNames[h.getMonth()] + " " + day + " " + year + "at " + hours + ":" + minutes + ":" + seconds + ":" + milliSeconds);
   </script>
 
   <script>
