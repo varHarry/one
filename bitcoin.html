@@ -91,6 +91,27 @@ console.info([minute, hour, day, month, year].join("\n"));
   console.info(Date.now() / 1000 | 0);
   </script>
 
+  <script>
+  //fun with date time
+  var date = new Date;
+date.setTime(result_from_Date_getTime);
+
+var seconds = date.getSeconds();
+var minutes = date.getMinutes();
+var hour = date.getHours();
+
+var year = date.getFullYear();
+var month = date.getMonth(); // beware: January = 0; February = 1, etc.
+var day = date.getDate();
+
+var dayOfWeek = date.getDay(); // Sunday = 0, Monday = 1, etc.
+var milliSeconds = date.getMilliseconds();
+var days_in_months = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+// for leap years, February has 29 days. Check whether
+// February, the 29th exists for the given year
+if( (new Date(year, 1, 29)).getDate() == 29 ) days_in_month[1] = 29;
+</script>
+
 <!--
   <script>
   //key value
