@@ -69,10 +69,14 @@
   </script>
 
   <script>
-  if (!Date.now) {
-      Date.now = function() { return new Date().getTime();
-      };
-  }
+  var someMillisecondValue = 511111222127;
+var date = new Date(someMillisecondValue);
+var minute = date.getMinutes();
+var hour = date.getHours();
+var day = date.getDate();
+var month = date.getMonth();
+var year = date.getFullYear();
+console.info([minute, hour, day, month, year].join("\n"));
   </script>
 
   <script>
