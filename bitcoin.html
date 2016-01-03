@@ -5,70 +5,8 @@
 
   <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<!--
-  <script>
-  $(document).ready(function () {
-  var bitcoinPrice = ("https://blockchain.info/q/24hrprice");
-  $.getJSON(bitcoinPrice, function (cost){
-    console.info('1 bitcoin = $',cost);
-    $(".bitcoin-price").append("<span>" + cost + "</span>");
-  });
-});
-  </script>
 
   <script>
-  $(document).ready(function() {
-    var slushStats = ("https://mining.bitcoin.cz/stats/json/947244-fb33810230dadb19c00f1e13068cd5d6");
-    $.getJSON(slushStats, function(btcstats) {
-      console.info(btcstats);
-      console.info(btcstats.blocks);
-      console.info(btcstats.blocks[390382].confirmations);
-      console.info(btcstats.blocks[390382].reward);
-    });
-});
-  </script>
-
-  <script>
-  $(document).ready(function () {
-  var bitcoinPrice = ("https://blockchain.info/q/24hrprice");
-  $.getJSON(bitcoinPrice, function (cost){
-    console.info('1 bitcoin = $',cost);
-    $(".bitcoin-price").append("<span>" + cost + "</span>");
-    var slushStats = ("https://mining.bitcoin.cz/stats/json/947244-fb33810230dadb19c00f1e13068cd5d6");
-  //  var i = 0; i < btcstats.length; i++;
-    $.getJSON(slushStats, function(btcstats) {
-      console.info(btcstats);
-      console.info(btcstats.blocks);
-      console.info(btcstats.blocks[Object].confirmations);
-      console.info(btcstats.blocks[390382].reward);
-    });
-  });
-});
-  </script>-->
-
-  <script>
-var h = new Date();
-var m = h.getMonth();
-var d = h.getDate();
-var y = h.getFullYear();
-var hours = h.getHours();
-var minutes = h.getMinutes();
-var seconds = h.getSeconds();
-var milliSeconds = h.getMilliseconds();
-console.info("Timestamp: ",m,d,y,hours,minutes,seconds,milliSeconds);
-  </script>
-
-  <script>
-  var monthNames = ["January", "February", "March", "April", "May", "June",
-    "July", "August", "September", "October", "November", "December"
-  ];
-
-  var d = new Date();
-  console.info("The current month is " + monthNames[d.getMonth()]);
-  </script>
-
-  <script>
-//put them together
 var monthNames = ["January", "February", "March", "April", "May", "June",
   "July", "August", "September", "October", "November", "December"
 ];
@@ -104,63 +42,6 @@ console.info("Timestamp: " + monthNames[h.getMonth()] + " " + day + " " + year +
     });
   });
   </script>
-
-  <script>
-  var someMillisecondValue = 511111222127;
-var date = new Date(someMillisecondValue);
-var minute = date.getMinutes();
-var hour = date.getHours();
-var day = date.getDate();
-var month = date.getMonth();
-var year = date.getFullYear();
-console.info([minute, hour, day, month, year].join("\n"));
-  </script>
-
-  <script>
-  console.info(new Date().getTime());
-  </script>
-
-  <script>
-  console.info(Math.floor(Date.now() / 1000));
-  </script>
-
-  <script>
-  console.info(Date.now() / 1000 | 0);
-  </script>
-
-  <script>
-  //fun with date time
-  var date = new Date;
-date.setTime(result_from_Date_getTime);
-
-var seconds = date.getSeconds();
-var minutes = date.getMinutes();
-var hour = date.getHours();
-
-var year = date.getFullYear();
-var month = date.getMonth(); // beware: January = 0; February = 1, etc.
-var day = date.getDate();
-
-var dayOfWeek = date.getDay(); // Sunday = 0, Monday = 1, etc.
-var milliSeconds = date.getMilliseconds();
-var days_in_months = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
-// for leap years, February has 29 days. Check whether
-// February, the 29th exists for the given year
-if( (new Date(year, 1, 29)).getDate() == 29 ) days_in_month[1] = 29;
-</script>
-
-<!--
-  <script>
-  //key value
-  Object.prototype.getKeyByValue = function( value ) {
-    for( var prop in this ) {
-        if( this.hasOwnProperty( prop ) ) {
-             if( this[ prop ] === value )
-                 return prop;
-        }
-    }
-}
-</script>-->
 
   <style>
   div{
