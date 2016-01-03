@@ -51,7 +51,11 @@ var h = new Date();
 var m = h.getMonth();
 var d = h.getDate();
 var y = h.getFullYear();
-console.info("Timestamp: ",m,d,y);
+var hours = h.getHours();
+var minutes = h.getMinutes();
+var seconds = h.getSeconds();
+var milliSeconds = h.getMilliseconds();
+console.info("Timestamp: ",m,d,y,hours,minutes,seconds,milliSeconds);
   </script>
 
   <script>
