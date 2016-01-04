@@ -7,7 +7,7 @@ $(document).ready(function() {
         $.getJSON(slushStats, function(btcstats) {
             for (var key in btcstats) {
                 if (btcstats.hasOwnProperty(key)) {
-                    console.info(btcstats);
+                    console.info(btcstats[1]);
                     console.info(btcstats.blocks);
                 }
             }
