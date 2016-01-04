@@ -11,8 +11,8 @@ $(document).ready(function() {
                     keys.push(key);
                     console.info(btcstats);
                     console.info(btcstats.blocks);
-                    console.info(btcstats.blocks[391222].confirmations);
-                    console.info(btcstats.blocks[391222].reward);
+                    console.info(btcstats.blocks.keys.confirmations);
+                    console.info(btcstats.blocks[keys].reward);
                 }
             }
             var monthNames = ["January", "February", "March", "April", "May", "June",
