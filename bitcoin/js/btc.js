@@ -5,6 +5,7 @@ $(document).ready(function() {
         $(".bitcoin-price").append("<span>" + cost + "</span>");
         var slushStats = ("https://mining.bitcoin.cz/stats/json/947244-fb33810230dadb19c00f1e13068cd5d6");
         $.getJSON(slushStats, function(btcstats) {
+                    console.info(btcstats.length);
           for (var i = 0; i < btcstats.length; i++) {
                     console.info(btcstats);
                     console.info(btcstats.blocks);
