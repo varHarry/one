@@ -22,7 +22,7 @@ $(document).ready(function() {
             var seconds = h.getSeconds();
             var milliSeconds = h.getMilliseconds();
             $(".btc-day").append("<span>" + monthNames[h.getMonth()] + " " + day + " " + year + " @ " + hours + ":" + minutes + ":" + seconds + ":" + milliSeconds + " </span>");
-            console.info("Timestamp: " + monthNames[h.getMonth()] + " " + day + " " + year + " @ " + hours + ":" + minutes + ":" + seconds + ":" + milliSeconds);
+            console.info("%cTimestamp: " + monthNames[h.getMonth()] + " " + day + " " + year + " @ " + hours + ":" + minutes + ":" + seconds + ":" + milliSeconds, "background-color:#00fa12;");
         });
     });
 });
