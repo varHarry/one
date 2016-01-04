@@ -10,7 +10,7 @@ $(document).ready(function() {
             });
             $.each(btcstats.blocks, function(key, value) {
               $.each(value, function(k,v){
-                console.info("inner: "+ k + "outer: " + v );
+                console.info("inner k: "+ k + "inner v: " + v);
               })
                 console.info("key is " + key + " and value is " + value);
             });
