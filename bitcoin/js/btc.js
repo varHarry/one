@@ -6,10 +6,10 @@ $(document).ready(function() {
         var slushStats = ("https://mining.bitcoin.cz/stats/json/947244-fb33810230dadb19c00f1e13068cd5d6");
         $.getJSON(slushStats, function(btcstats) {
 
-                    console.info(btcstats[1]);
+                    console.info(btcstats);
                     console.info(btcstats.blocks);
 
-            
+
             var monthNames = ["January", "February", "March", "April", "May", "June",
                 "July", "August", "September", "October", "November", "December"
             ];
