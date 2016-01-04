@@ -1,11 +1,14 @@
 $(document).ready(function() {
     var bitcoinPrice = ("https://blockchain.info/q/24hrprice");
     $.getJSON(bitcoinPrice, function(cost) {
-        console.info('1 bitcoin = $', cost);
+        console.info("%c1 bitcoin = $", "background-color:yellow;" ,cost);
         $(".bitcoin-price").append("<span>" + cost + "</span>");
         var slushStats = ("https://mining.bitcoin.cz/stats/json/947244-fb33810230dadb19c00f1e13068cd5d6");
         $.getJSON(slushStats, function(btcstats) {
             $.each(btcstats, function(key, value) {
+                console.info("key is " + key + " and value is " + value);
+            });
+            $.each(btcstats.blocks, function(key, value) {
                 console.info("key is " + key + " and value is " + value);
             });
             var monthNames = ["January", "February", "March", "April", "May", "June",
