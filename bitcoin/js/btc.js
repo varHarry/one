@@ -6,10 +6,10 @@ $(document).ready(function() {
         var slushStats = ("https://mining.bitcoin.cz/stats/json/947244-fb33810230dadb19c00f1e13068cd5d6");
         $.getJSON(slushStats, function(btcstats) {
           for (var i = 0; i < btcstats.blocks.length; i++) {
-                    console.log(btcstats.blocks[i].confirmations);
-                    console.log(btcstats.blocks[i].reward);
                     console.info(btcstats);
                     console.info(btcstats.blocks);
+                    console.info(btcstats.blocks[i].confirmations);
+                    console.info(btcstats.blocks[i].reward);
                   }
             var monthNames = ["January", "February", "March", "April", "May", "June",
                 "July", "August", "September", "October", "November", "December"
