@@ -9,6 +9,9 @@ $(document).ready(function() {
                 console.info("key is " + key + " and value is " + value);
             });
             $.each(btcstats.blocks, function(key, value) {
+              $.each(value, function(k,v){
+                console.info("inner: "+ k + "outer: " + v );
+              })
                 console.info("key is " + key + " and value is " + value);
             });
             var monthNames = ["January", "February", "March", "April", "May", "June",
