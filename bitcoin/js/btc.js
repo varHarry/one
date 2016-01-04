@@ -5,13 +5,16 @@ $(document).ready(function() {
         $(".bitcoin-price").append("<span>" + cost + "</span>");
         var slushStats = ("https://mining.bitcoin.cz/stats/json/947244-fb33810230dadb19c00f1e13068cd5d6");
         $.getJSON(slushStats, function(btcstats) {
-            $.each(btcstats, function(key, value) {
-                console.info("key is " + key + " and value is " + value);
-            });
+          var $output = $('body'), tempHTML = '';
             $.each(btcstats.blocks, function(key, value) {
+              $output.append('<h1>' + key + '<h1>');
+              tempHTML += '<table>';
               $.each(value, function(k,v){
-                console.info("inner k: "+ k + "inner v: " + v);
+                tempHTML += '<tr><td>' + k + '</td><td>' + v + '</td></tr>';
+                console.info("inner k: "+ k + " inner v: " + v);
               })
+              tempHTML += '</table>';
+              $output.append(tempHTML);
                 console.info("key is " + key + " and value is " + value);
             });
             var monthNames = ["January", "February", "March", "April", "May", "June",
