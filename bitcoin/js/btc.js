@@ -11,7 +11,7 @@ $(document).ready(function() {
                     keys.push(key);
                     console.info(btcstats);
                     console.info(btcstats.blocks);
-                    console.info(btcstats.blocks.keys.confirmations);
+                    //console.info(btcstats.blocks.keys.confirmations);
                     console.info(btcstats.blocks[keys].reward);
                 }
             }
