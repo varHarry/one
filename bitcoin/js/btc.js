@@ -5,11 +5,10 @@ $(document).ready(function() {
         $(".bitcoin-price").append("<span>" + cost + "</span>");
         var slushStats = ("https://mining.bitcoin.cz/stats/json/947244-fb33810230dadb19c00f1e13068cd5d6");
         $.getJSON(slushStats, function(btcstats) {
-                    //console.info(btcstats);
                     console.info(btcstats);
                     console.info(btcstats.blocks);
-                    console.info(btcstats.blocks[i].confirmations);
-                    console.info(btcstats.blocks[i].reward);
+                    console.info(btcstats.blocks[391222].confirmations);
+                    console.info(btcstats.blocks[391222].reward);
             var monthNames = ["January", "February", "March", "April", "May", "June",
                 "July", "August", "September", "October", "November", "December"
             ];
