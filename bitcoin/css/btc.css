@@ -1,3 +1,7 @@
 div{
-  font-family: Raleway;
+  font-family: Arial,Raleway;
+}
+h2{
+  border-bottom:1px solid #777;
+  border-top:1px solid #777;
 }

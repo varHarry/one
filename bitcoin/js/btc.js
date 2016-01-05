@@ -7,7 +7,7 @@ $(document).ready(function() {
         $.getJSON(slushStats, function(btcstats) {
           var $output = $('.pool-info'), tempHTML = '';
             $.each(btcstats.blocks, function(key, value) {
-              $output.append('<h1>' + key + '<h1>');
+              $output.append('<h2>Block # ' + key + '<h2>');
               tempHTML += '<table>';
               $.each(value, function(k,v){
                 tempHTML += '<tr><td>' + k + '</td><td>' + v + '</td></tr>';
