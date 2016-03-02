@@ -106,6 +106,12 @@
               <input type="radio" name="auctionType" value="Both"> Both<br>
           </div><!--end top search box div -->
 
+          <div class="2nd-search-box" style="border:1px solid #d3d3d3;margin-left:10px;padding:6px;margin-top:8px;">
+            <input type="radio" name="reserveType" value="noReserve"> No Reserve Auctions<br>
+            <input type="radio" name="reserveType" value="Reserve"> Reserve Auctions<br>
+            <input type="radio" name="reserveType" value="Both" checked> Both<br>
+        </div><!--end 2nd search box div -->
+
           <div class="year-select" style="padding:6px;margin-left:10px;border:1px solid #d3d3d3;margin-top:8px;">
           Year:
           <select name="year" style="width:50%;">
@@ -160,12 +166,34 @@
             <br>
           </div><!--new or used-->
 
-              <div class="4x4-or2wd" style="margin-top:9px;margin-left:10px;border:1px solid #d3d3d3;padding:6px;">
-              <input type="checkbox" name="4x4" value="4x4"> 4x4
-                <br>
-              <input type="checkbox" name="2wd" value="2wd"> 2wd
-                <br>
-              </div><!--4x4 or 2wd-->
+          <div class="fuelType" style="margin-top:9px;margin-left:10px;border:1px solid #d3d3d3;padding:6px;">
+          <input type="checkbox" name="gas" value="gas"> Gas
+            <br>
+          <input type="checkbox" name="diesel" value="diesel"> Diesel
+            <br>
+          </div><!--fuelType-->
+
+          <div class="4x4-or2wd" style="margin-top:9px;margin-left:10px;border:1px solid #d3d3d3;padding:6px;">
+          <input type="checkbox" name="4x4" value="4x4"> 4x4
+            <br>
+          <input type="checkbox" name="2wd" value="2wd"> 2wd
+            <br>
+          </div><!--4x4 or 2wd-->
+
+              <div class="engineSize" style="margin-top:9px;margin-left:10px;border:1px solid #d3d3d3;padding:6px;">
+                Engine Size:
+                <select name="cylinderSize" style="width:50%;">
+                          <option value="3">3 Cylinder</option>
+                          <option value="4">4 Cylinder</option>
+                          <option value="5">5 Cylinder</option>
+                          <option value="6">6 Cylinder</option>
+                          <option value="8">8 Cylinder</option>
+                          <option value="10">10 Cylinder</option>
+                          <option value="12">12 Cylinder</option>
+                          <option value="16">16 Cylinder</option>
+                          <option value="all" selected>Any Size</option>
+              </select>
+            </div>
 
         </form>
       </div><!--end search column-->
