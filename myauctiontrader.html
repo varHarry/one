@@ -5,7 +5,6 @@
 <style>
 .container{
   width:1100px;
-  height:2000px;
   border:1px dashed #000000;
   margin-left:auto;
   margin-right:auto;
@@ -58,18 +57,21 @@
   height:880px;
   display:inline-block;
   border:1px solid #000;
+  vertical-align: middle;
 }
 .search-column{
-  width:27%;
+  width:24%;
   height:100%;
   display:inline-block;
   border:1px solid #000000;
+  vertical-align: middle;
 }
 .preview-auction{
-  width:77%;
+  width:75%;
   height:100%;
   display:inline-block;
   border:1px solid #000000;
+  vertical-align: middle;
 }
 </style>
 </head>
@@ -90,7 +92,13 @@
       <div class="box-8"></div>
     </div><!--end menu class-->
     <div class="body">
-      <div class="search-column"></div><!--end search column-->
+      <div class="search-column">
+        <form id="search-box">
+            <input class="search" type="text" name="generalSearch" placeholder="Search our Auctions" style="width:70%;margin-left:12px;margin-top:7px;height:30px;font-size:15px;">
+            <button style="height:30px;">GO!</button>
+            <br>
+        </form>
+      </div><!--end search column-->
 
       <div class="preview-auction"></div><!--end preview auction class-->
     </div><!--end body class-->
