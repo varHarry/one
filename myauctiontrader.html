@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>my Auction Trader.com </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>my Auction Trader.com </title>
 <style>
 .container{
   width:1100px;
@@ -73,6 +74,36 @@
   border:1px solid #000000;
   vertical-align: middle;
 }
+.big-preview{
+  border:1px solid #000000;
+  display:inline-block;
+  padding:6px;
+  height:76%;
+  width:70%;
+
+}
+.side-scroll-preview{
+  border:1px solid #000000;
+  display:inline-block;
+  width:22%;
+  float:right;
+  padding:6px;
+  height:76%;
+
+}
+.bottom-scroll-preview{
+  width:98%;
+  height:19%;
+  border:1px solid #000000;
+  padding:6px;
+}
+.top-left,.top-right,.bottom-left,.bottom-right{
+  border:1px solid #d3d3d3;
+  display:inline-block;
+  padding:1px;
+  width:48%;
+  height:48%;
+}
 </style>
 </head>
 <body>
@@ -81,15 +112,15 @@
       <div class="logo"></div>
       <div class="social-media"></div>
     </div><!--end header class-->
-    <div class="menu">
-      <div class="box-1"></div>
-      <div class="box-2"></div>
-      <div class="box-3"></div>
-      <div class="box-4"></div>
-      <div class="box-5"></div>
-      <div class="box-6"></div>
-      <div class="box-7"></div>
-      <div class="box-8"></div>
+    <div class="menu" style="vertical-align:middle;padding:2px;">
+      <div class="box-1">SIGN UP/<br>LOG IN</div>
+      <div class="box-2">LIVE AUCTIONS</div>
+      <div class="box-3">PUBLIC AUCTIONS</div>
+      <div class="box-4">DEALER AUCTIONS</div>
+      <div class="box-5">AUCTION SCHEDULE</div>
+      <div class="box-6">SUCCESS STORIES</div>
+      <div class="box-7">OUR <br>STORY</div>
+      <div class="box-8">COMPANY INFO</div>
     </div><!--end menu class-->
     <div class="body">
       <div class="search-column">
@@ -198,8 +229,20 @@
         </form>
       </div><!--end search column-->
 
-      <div class="preview-auction"></div><!--end preview auction class-->
+      <div class="preview-auction">
+        <div class="big-preview">
+          <div class="top-left"></div>
+          <div class="top-right"></div>
+          <div class="bottom-left"></div>
+          <div class="bottom-right"></div>
+
+        </div><!--end big preview class-->
+        <div class="side-scroll-preview"></div><!--end side scroll preview class-->
+        <div class="bottom-scroll-preview"></div><!--end bootom scroll preview class-->
+
+      </div><!--end preview auction class-->
     </div><!--end body class-->
+    <div class="footer"></div><!--end footer class-->
   </div><!--end container class-->
 </body>
 </html>
