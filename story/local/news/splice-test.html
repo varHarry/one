@@ -9,6 +9,7 @@
 </head>
 
 <body>
+    
 <script>
 var newURL = window.location.protocol + "//" + window.location.host + "/amp" + window.location.pathname;document.write(newURL);
 var meta = document.createElement('link');
@@ -16,7 +17,6 @@ meta.setAttribute('rel', 'amphtml');
 meta.setAttribute('href', (newURL));
 document.getElementsByTagName('head')[0].appendChild(meta);
 </script>
-<script>//var newURL = window.location.protocol + "//" + window.location.host + "/amp" + window.location.pathname;document.write(newURL);</script>
 
 </body>
 </html>
